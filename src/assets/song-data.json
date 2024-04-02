@@ -4,7 +4,7 @@
       "artist": "Kanye West",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
+      "genre": "rap", 
       "image": "images/allFallsDown.png"
     },
     {
@@ -28,87 +28,144 @@
       "artist": "Cage The Elephant",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/socialCues.jpeg"
     },
     {
       "name": "Social Cues",
       "artist": "Cage The Elephant",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/socialCues.jpeg"
     },
     {
       "name": "Mother Nature's Bitch",
       "artist": "Okay Kaya",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/motherN.jpeg"
     },
     {
       "name": "Chrysalis",
       "artist": "Empire Of the Sun",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/empire.jpeg"
     },
     {
       "name": "Half Mast",
       "artist": "Empire Of the Sun",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/empire.jpeg"
     },
     {
       "name": "Callaita",
       "artist": "Bad Bunny",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/veranoSinTi.png"
     },
     {
       "name": "Yo No Soy Celoso",
       "artist": "Bad Bunny",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/veranoSinTi.png"
     },
     {
       "name": "Black Madonna",
       "artist": "Cage The Elephant",
       "year": 2004,
       "length": 3.43,
-      "grenre": "rap", 
-      "image": "images/allFallsDown.png"
+      "genre": "rap", 
+      "image": "images/socialCues.jpeg"
     },
     {
-      "name": "Everything Bagel",
-      "description": "A toasted bagel with sesame seeds, poppy seeds, and dried onion",
-      "price": 2.99,
-      "image": "images/miku.png"
+        "name": "Ice Melts",
+        "artist": "Drake & Young Thug",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/ice.jpeg"
     },
     {
-      "name": "Gingerbread Man",
-      "description": "A soft gingerbread cookie with a sweet icing glaze",
-      "price": 2.99,
-      "image": "images/nick.png"
+        "name": "Dancing With Our Hands Tied",
+        "artist": "Taylor Swift",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/dancing.jpg"
     },
     {
-      "name": "Cheesecake",
-      "description": "A slice of classic New York cheesecake topped with strawberry",
-      "price": 3.99,
-      "image": "images/sunny.png"
+        "name": "Stargirl Interlude",
+        "artist": "The Weeknd & Lana Del Rey",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/stargirl.jpeg"
     },
     {
-      "name": "Cream Puff",
-      "description": "Light and airy pâte à choux filled with sweet whipped cream",
-      "price": 2.99,
-      "image": "images/tongyu.png"
+        "name": "Ride",
+        "artist": "Doja Cat",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/allFallsDown.png"
+    },
+    {
+        "name": "Toast",
+        "artist": "Koffee",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/koffee.jpeg"
+    },
+    {
+        "name": "Wycleaf Jean",
+        "artist": "Young Thug",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/wycleafJean.jpeg"
+    },
+
+    {
+        "name": "400 Lux",
+        "artist": "Lorde",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/lorde.webp"
+    },
+    {
+        "name": "Tarot",
+        "artist": "Bad Bunny",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/veranoSinTi.png"
+    },
+    {
+        "name": "Lifestyle",
+        "artist": "Young Thug",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/lifestyle.png"
+    },
+    {
+        "name": "The Look",
+        "artist": "Metromony",
+        "year": 2004,
+        "length": 3.43,
+        "genre": "rap", 
+        "image": "images/look.jpeg"
     }
   ]

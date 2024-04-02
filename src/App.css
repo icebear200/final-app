@@ -14,40 +14,68 @@
 }
 
 
+/* .appTitle{
+  width: 70px;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+} */
 
+.songListContainer{
+  display: flex;
+  justify-content: space-around;
+  max-width: auto;
+  margin: 0 auto;
+}
 
 .App-header {
   background-color: black;
-
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
 
-
 .songImage{
-  margin-top: 10%;
   margin-left: 10%;
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 20px;
 
 }
 
 .itemInfo{
-  margin-left: 10%;
-  display: flex;
-  align-items: flex-start;
+  margin-top: 5%;
 }
 
-.songList{
+.title{
+font-size: 28px;
+font-family: fantasy;
+}
+
+.artist{
+  font-size: 20px;
+}
+.formatImage{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+
+}
+.songList, .favSongList{
+  width: 50%
+}
+
+.favSongList{
+  display: flex;
+  flex-direction: column;
+}
+
+.songAndartist{
+
+
 }
 
 @keyframes App-logo-spin {
