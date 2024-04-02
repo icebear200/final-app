@@ -1,0 +1,114 @@
+[
+    {
+      "name": "All Falls Down",
+      "artist": "Kanye West",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Bad Bad Bad",
+      "artist": "Young Thug",
+      "year": 4.99,
+      "length": 3.43,
+      "genre": "rap",
+      "image": "images/badbadbad.png"
+    },
+    {
+      "name": "Forrest Gump",
+      "artist": "Frank Ocean",
+      "year": 2.99,
+      "length": 3.43,
+      "genre": "R&B",
+      "image": "images/forrestGump.png"
+    },
+    {
+      "name": "Ready to Let Go",
+      "artist": "Cage The Elephant",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Social Cues",
+      "artist": "Cage The Elephant",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Mother Nature's Bitch",
+      "artist": "Okay Kaya",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Chrysalis",
+      "artist": "Empire Of the Sun",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Half Mast",
+      "artist": "Empire Of the Sun",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Callaita",
+      "artist": "Bad Bunny",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Yo No Soy Celoso",
+      "artist": "Bad Bunny",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Black Madonna",
+      "artist": "Cage The Elephant",
+      "year": 2004,
+      "length": 3.43,
+      "grenre": "rap", 
+      "image": "images/allFallsDown.png"
+    },
+    {
+      "name": "Everything Bagel",
+      "description": "A toasted bagel with sesame seeds, poppy seeds, and dried onion",
+      "price": 2.99,
+      "image": "images/miku.png"
+    },
+    {
+      "name": "Gingerbread Man",
+      "description": "A soft gingerbread cookie with a sweet icing glaze",
+      "price": 2.99,
+      "image": "images/nick.png"
+    },
+    {
+      "name": "Cheesecake",
+      "description": "A slice of classic New York cheesecake topped with strawberry",
+      "price": 3.99,
+      "image": "images/sunny.png"
+    },
+    {
+      "name": "Cream Puff",
+      "description": "Light and airy pâte à choux filled with sweet whipped cream",
+      "price": 2.99,
+      "image": "images/tongyu.png"
+    }
+  ]

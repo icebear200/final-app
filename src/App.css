@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+.App-header {
+  background-color: black;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+.songImage{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.itemInfo{
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.songList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
