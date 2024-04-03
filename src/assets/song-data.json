@@ -4,7 +4,7 @@
       "artist": "Kanye West",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Rap", 
       "image": "images/allFallsDown.png"
     },
     {
@@ -12,7 +12,7 @@
       "artist": "Young Thug",
       "year": 4.99,
       "length": 3.43,
-      "genre": "rap",
+      "genre": "Rap",
       "image": "images/badbadbad.png"
     },
     {
@@ -28,7 +28,7 @@
       "artist": "Cage The Elephant",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Indie", 
       "image": "images/socialCues.jpeg"
     },
     {
@@ -36,7 +36,7 @@
       "artist": "Cage The Elephant",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Indie", 
       "image": "images/socialCues.jpeg"
     },
     {
@@ -44,7 +44,7 @@
       "artist": "Okay Kaya",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Alt", 
       "image": "images/motherN.jpeg"
     },
     {
@@ -52,7 +52,7 @@
       "artist": "Empire Of the Sun",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Alt", 
       "image": "images/empire.jpeg"
     },
     {
@@ -60,7 +60,7 @@
       "artist": "Empire Of the Sun",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Alt", 
       "image": "images/empire.jpeg"
     },
     {
@@ -68,7 +68,7 @@
       "artist": "Bad Bunny",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Spanish", 
       "image": "images/veranoSinTi.png"
     },
     {
@@ -76,7 +76,7 @@
       "artist": "Bad Bunny",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Spanish", 
       "image": "images/veranoSinTi.png"
     },
     {
@@ -84,7 +84,7 @@
       "artist": "Cage The Elephant",
       "year": 2004,
       "length": 3.43,
-      "genre": "rap", 
+      "genre": "Indie", 
       "image": "images/socialCues.jpeg"
     },
     {
@@ -92,7 +92,7 @@
         "artist": "Drake & Young Thug",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Rap", 
         "image": "images/ice.jpeg"
     },
     {
@@ -100,7 +100,7 @@
         "artist": "Taylor Swift",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Pop", 
         "image": "images/dancing.jpg"
     },
     {
@@ -108,7 +108,7 @@
         "artist": "The Weeknd & Lana Del Rey",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Pop", 
         "image": "images/stargirl.jpeg"
     },
     {
@@ -116,7 +116,7 @@
         "artist": "Doja Cat",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Pop", 
         "image": "images/allFallsDown.png"
     },
     {
@@ -124,7 +124,7 @@
         "artist": "Koffee",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Reagge", 
         "image": "images/koffee.jpeg"
     },
     {
@@ -132,7 +132,7 @@
         "artist": "Young Thug",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Rap", 
         "image": "images/wycleafJean.jpeg"
     },
 
@@ -141,7 +141,7 @@
         "artist": "Lorde",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Alt", 
         "image": "images/lorde.webp"
     },
     {
@@ -149,7 +149,7 @@
         "artist": "Bad Bunny",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Rap", 
         "image": "images/veranoSinTi.png"
     },
     {
@@ -157,7 +157,7 @@
         "artist": "Young Thug",
         "year": 2004,
         "length": 3.43,
-        "genre": "rap", 
+        "genre": "Rap", 
         "image": "images/lifestyle.png"
     },
     {
