@@ -44,6 +44,8 @@ if (filteredArtist || filteredGenre) {
     setFilteredArtist(artist)
   }
   
+  // receives the selected genre form the genre component because its passed in as a prop and updates the genre the 
+  //filteredGenres list by setting it to the genres selected throguh the genre component
   const handleGenreSelection = (genre) => {
     setFilteredGenre(genre)
   }
@@ -95,7 +97,7 @@ const sortSongs = () => {
           /> {item} </label>
         )
         )} 
-          <GenreFilter handleGenreSelection={handleGenreSelection} filteredGenre={filteredGenre}/>
+          <GenreFilter handleGenreSelection={handleGenreSelection} filteredGenre={filteredGenre} songData={songData}/>
         </div>
         </div>
       
