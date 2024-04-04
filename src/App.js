@@ -13,44 +13,65 @@ songData.forEach((item) => {
 
 function App() {
 const [favList, setFavList] = useState ([])
-const [sortedSongs, setSortedSongs] = useState(songData)
-const [unsortedSongs] = useState(songData)
+// const [sortedSongs, setSortedSongs] = useState(songData)
 const [filteredArtist, setFilteredArtist] = useState('')
-const [filteredSongsByArtist, setFilteredSongsByArtist] = useState([]);
 const [filteredGenre, setFilteredGenre] = useState('')
-const [filteredSongsByGenre, setFilteredSongsByGenre]= useState([]);
 const[resetFilters, setResetFilters] = useState(false)
-const[checked , setChecked] = useState(false);
+const[filteredSongs, setFilteredSongs] = useState(songData)
+const[sortClicked, setSortClicked] = useState(false);
 
+const reset = () => {
+setFilteredArtist('')
+setFilteredGenre('')
+setSortClicked(false)
+console.log("BEING RESET")
+setFilteredSongs(songData)
 
-
-let filteredSongs;
-if (filteredArtist || filteredGenre) {
-  filteredSongs = songData.filter(song => {
-    if (filteredArtist && filteredGenre) {return song.artist === filteredArtist || song.genre === filteredGenre;
-    }
-    if (filteredArtist) {
-      return song.artist === filteredArtist;
-    }
-    if (filteredGenre) {
-      return song.genre === filteredGenre;
-    }
-    return true; // No filters applied, so include all songs
-  });
-} else { 
-  filteredSongs = songData;
 }
 
 
 
-  const handleArtistSlection = (artist) => {
+
+const filterSongs = (artist, genre) => {
+  let filtered = songData;
+  if (artist !== '') {
+    filtered = filtered.filter(song => song.artist === artist);
+  }
+  if (genre !== '') {
+    filtered = filtered.filter(song => song.genre === genre);
+  }
+  setFilteredSongs(filtered);
+}
+
+// let filteredSongs;
+// if (filteredArtist || filteredGenre) {
+//   filteredSongs = songData.filter(song => {
+//     if (filteredArtist && filteredGenre) {return song.artist === filteredArtist || song.genre === filteredGenre;
+//     }
+//     if (filteredArtist) {
+//       return song.artist === filteredArtist;
+//     }
+//     if (filteredGenre) {
+//       return song.genre === filteredGenre;
+//     }
+//     return true; // No filters applied, so include all songs
+//   });
+// } else { 
+//   filteredSongs = songData;
+// }
+
+
+
+  const handleArtistSelection = (artist) => {
     setFilteredArtist(artist)
+    filterSongs(artist, filteredGenre)
   }
   
   // receives the selected genre form the genre component because its passed in as a prop and updates the genre the 
   //filteredGenres list by setting it to the genres selected throguh the genre component
   const handleGenreSelection = (genre) => {
     setFilteredGenre(genre)
+    filterSongs(filteredArtist, genre)
   }
 
 const favorite = (songName) => { if (!favList.includes(songName)){
@@ -84,11 +105,17 @@ const favMinutes = () => {
 }
 
 
+// const sortSongs = () => {
+//   const getSongInfo = [...sortedSongs];
+//   const sort = getSongInfo.sort((a, b) => a.name.localeCompare(b.name))
+//   setSortedSongs(sort)
+//   console.log("Check sorting")
+// }
+
 const sortSongs = () => {
-  const getSongInfo = [...sortedSongs];
-  const sort = getSongInfo.sort((a, b) => a.name.localeCompare(b.name))
-  setSortedSongs(sort)
-  console.log("Check sorting")
+  const sort = [...filteredSongs].sort((a,b ) => a.name.localeCompare(b.name))
+  setFilteredSongs(sort)
+  setSortClicked(true);
 }
 
 
@@ -99,13 +126,13 @@ const sortSongs = () => {
       <div class="songListContainer"> 
       <div class="Checkboxes">   
       <button onClick={sortSongs}>Sort Songs Alphabetically</button>
-      <button onClick={ () => setResetFilters(!resetFilters)}> Reset Filters</button>
+      <button onClick={ () => reset()}> Reset Filters</button>
      <div class="ContainerSongs"> 
      <div class= "filtersContainer"> 
      <div class="artistFilterContainer">  
      <h3> Filter By Artist</h3>
 
-     <ArtistFilter handleArtistSlection={handleArtistSlection} filteredArtist={filteredArtist} songData={songData} />
+     <ArtistFilter handleArtistSelection={handleArtistSelection} filteredArtist={filteredArtist} songData={songData} />
         {/* {[... new Set(songData.map(item => item.artist))].map((item, index) => (
           <label key={index}> <input type ="checkbox" checked={filteredArtist === item} onChange={() => handleArtistSlection(item)}
           /> {item} </label>
@@ -139,7 +166,6 @@ const sortSongs = () => {
         genre= {item.genre}
         year = {item.year}/>
       )) } 
-
       </div>
       </div>
       </div> 
