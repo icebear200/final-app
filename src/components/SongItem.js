@@ -17,6 +17,7 @@ export default function SongItem(props){
         <div className="genre"> {props.data.genre} </div>
         <div className="year"> {props.data.year} 
          <button onClick={ () => props.favorite(props.data.name)}> Add To Favorites</button> 
+         <buttton onClick={() => props.removeFavorite(props.data.name)}> Remove Favorite</buttton>
          </div> 
          </div>
         </div>

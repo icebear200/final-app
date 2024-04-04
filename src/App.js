@@ -3,6 +3,7 @@ import {useState, useEffect} from "react"
 import SongItem from './components/SongItem';
 import songData from './assets/song-data.json';
 import GenreFilter from './components/GenreFilter';
+import ArtistFilter from './components/ArtistFilter';
 
 songData.forEach((item) => {
   item.image = process.env.PUBLIC_URL + "/"+ item.image;
@@ -40,6 +41,8 @@ if (filteredArtist || filteredGenre) {
   filteredSongs = songData;
 }
 
+
+
   const handleArtistSlection = (artist) => {
     setFilteredArtist(artist)
   }
@@ -55,6 +58,7 @@ const favorite = (songName) => { if (!favList.includes(songName)){
   }
 }
 
+
 const finalFavList = () => {
   let final = " "
   for (const songName in favList){  const songList = favList[songName]
@@ -62,6 +66,12 @@ const finalFavList = () => {
   }
   return final;
 }
+
+const removeFavorite = (songName) => {
+ const updatedListSongsRemoved = favList.filter((name) => name !== songName)
+  setFavList(updatedListSongsRemoved)
+}
+
 
 // gets the each song from the favoriteList and accesses its lengths and adds its lengths to total minutes
 const favMinutes = () => {
@@ -90,17 +100,25 @@ const sortSongs = () => {
       <div class="Checkboxes">   
       <button onClick={sortSongs}>Sort Songs Alphabetically</button>
       <button onClick={ () => setResetFilters(!resetFilters)}> Reset Filters</button>
-     
-     <div class="artistFilterContainer"> 
-        {[... new Set(songData.map(item => item.artist))].map((item, index) => (
+     <div class="ContainerSongs"> 
+     <div class= "filtersContainer"> 
+     <div class="artistFilterContainer">  
+     <h3> Filter By Artist</h3>
+
+     <ArtistFilter handleArtistSlection={handleArtistSlection} filteredArtist={filteredArtist} songData={songData} />
+        {/* {[... new Set(songData.map(item => item.artist))].map((item, index) => (
           <label key={index}> <input type ="checkbox" checked={filteredArtist === item} onChange={() => handleArtistSlection(item)}
           /> {item} </label>
         )
-        )} 
+        )}  */}
+         </div>
+
+        <div class="genreFilterContainer"> <h3> Filter By Genre</h3>
           <GenreFilter handleGenreSelection={handleGenreSelection} filteredGenre={filteredGenre} songData={songData}/>
+          </div>
+       
         </div>
-        </div>
-      
+       </div>
       
 
       {/* <div class ="genreFilterContainer"> 
@@ -111,10 +129,10 @@ const sortSongs = () => {
         )} 
       </div> */}
 
-        <div class="ContainerSongs"> 
+        
         <div className="SongList"> 
         {filteredSongs.map((item, index) => (
-        <SongItem data={item} key={index} favorite={() => favorite(item.name)} 
+        <SongItem data={item} key={index} favorite={() => favorite(item.name)} removeFavorite={() => removeFavorite(item.name)}
         name = {item.name}
         artist={item.artist}
         length={item.length}
