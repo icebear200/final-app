@@ -1,12 +1,4 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,19 +6,19 @@
 }
 
 
-/* .appTitle{
+.appTitle{
   width: 70px;
   font-size: xx-large;
   display: flex;
   align-items: center;
-} */
+} 
 
-/* .songListContainer{
+.songListContainer{
   display: flex;
   justify-content: space-around;
   max-width: auto;
   margin: 0 auto;
-} */
+}
 
 .App-header {
   background-color: black;
@@ -35,33 +27,18 @@
 }
 
 
-.songImage{
-  margin-left: 10%;
-  width: 140px;
-  height: 140px;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-
-}
-
 .itemInfo{
   margin-top: 5%;
 }
 
-.title{
-font-size: 28px;
-font-family: fantasy;
-}
 
-.artist{
-  font-size: 20px;
-}
+
 .formatImage{
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
+  margin-top: 10px;
 
 }
 .songList, .favSongList{
@@ -78,30 +55,23 @@ font-family: fantasy;
 
 }
 
-/* .genreFilterContainer{
+.genreFilterContainer{
   display: flex;
   flex-direction: row;
 
 } */
 
-/* .filtersContainer{
-  pos
-} */
 
-/* .artistFilterContainer{
+ /* .artistFilterContainer{
   position: fixed;
   left: 0;
   display: flex;
   flex-direction: column;
-} */ */
+}  */
 
-.App {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-.appTitle {
+
+/* .appTitle {
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -133,21 +103,89 @@ font-family: fantasy;
 }
 
 .ContainerSongs {
-  display: flex;
-  justify-content: row;
+  flex-grow: 1;
+  margin-left: 20px;
 }
 
 .favSongList {
-  align-items: right;
   margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageInfo{
+  margin-top: 20px;
+} 
+*/
+
+
+
+.App {
+  display: flex;
+  flex-direction: r;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
+.songImage{
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.formatImage{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.title{
+  font-size: 28px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .itemInfo{
+    margin-top: 10px;
+  }
+
+  .artist{
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+
+  .genre, .year, .length{
+    font-size: 12px;
+  }
+
+  .extraAttributes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .checkboxBar{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 300px;
+    height: 350px;
+
+  }
+
+  .songListContainer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .favSongs{
+    width: 200px;
+    height: auto;
+    margin-right: 40px;
+  }
+
+  

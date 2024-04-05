@@ -3,22 +3,47 @@
       "name": "All Falls Down",
       "artist": "Kanye West",
       "year": 2004,
-      "length": 3.43,
+      "length": 3.42,
       "genre": "Rap", 
       "image": "images/allFallsDown.png"
     },
+
+
+      
     {
       "name": "Bad Bad Bad",
       "artist": "Young Thug",
-      "year": 4.99,
+      "year": 2019,
       "length": 3.43,
       "genre": "Rap",
       "image": "images/badbadbad.png"
     },
+
+
+    {
+      "name": "She",
+      "artist": "Tyler the Creator",
+      "year": 2011,
+      "length": 4.54,
+      "genre": "Rap", 
+      "image": "images/allFallsDown.png"
+    },
+
+
+    {
+      "name": "Crack Rock",
+      "artist": "Frank Ocean",
+      "year": 2012,
+      "length": 3.24,
+      "genre": "Rap", 
+      "image": "images/allFallsDown.png"
+    },
+
+  
     {
       "name": "Forrest Gump",
       "artist": "Frank Ocean",
-      "year": 2.99,
+      "year": 2012,
       "length": 3.43,
       "genre": "R&B",
       "image": "images/forrestGump.png"
@@ -26,17 +51,17 @@
     {
       "name": "Ready to Let Go",
       "artist": "Cage The Elephant",
-      "year": 2004,
-      "length": 3.43,
-      "genre": "Indie", 
+      "year": 2019,
+      "length": 4,
+      "genre": "Alt/Indie", 
       "image": "images/socialCues.jpeg"
     },
     {
       "name": "Social Cues",
       "artist": "Cage The Elephant",
-      "year": 2004,
-      "length": 3.43,
-      "genre": "Indie", 
+      "year": 2019,
+      "length": 4,
+      "genre": "Alt/Indie", 
       "image": "images/socialCues.jpeg"
     },
     {
@@ -44,30 +69,40 @@
       "artist": "Okay Kaya",
       "year": 2004,
       "length": 3.43,
-      "genre": "Alt", 
+      "genre": "Alt/Indie", 
       "image": "images/motherN.jpeg"
     },
     {
       "name": "Chrysalis",
       "artist": "Empire Of the Sun",
       "year": 2004,
-      "length": 3.43,
-      "genre": "Alt", 
+      "length": 4,
+      "genre": "Alt/Indie", 
       "image": "images/empire.jpeg"
     },
+
+    {
+      "name": "Touch the Sky",
+      "artist": "Kanye West",
+      "year": 200,
+      "length": 3.42,
+      "genre": "Rap", 
+      "image": "images/allFallsDown.png"
+    },
+
     {
       "name": "Half Mast",
       "artist": "Empire Of the Sun",
       "year": 2004,
       "length": 3.43,
-      "genre": "Alt", 
+      "genre": "Pop", 
       "image": "images/empire.jpeg"
     },
     {
       "name": "Callaita",
       "artist": "Bad Bunny",
       "year": 2004,
-      "length": 3.43,
+      "length": 4,
       "genre": "Spanish", 
       "image": "images/veranoSinTi.png"
     },
@@ -75,7 +110,7 @@
       "name": "Yo No Soy Celoso",
       "artist": "Bad Bunny",
       "year": 2004,
-      "length": 3.43,
+      "length": 3.5,
       "genre": "Spanish", 
       "image": "images/veranoSinTi.png"
     },
@@ -83,8 +118,8 @@
       "name": "Black Madonna",
       "artist": "Cage The Elephant",
       "year": 2004,
-      "length": 3.43,
-      "genre": "Indie", 
+      "length": 5,
+      "genre": "Alt/Indie", 
       "image": "images/socialCues.jpeg"
     },
     {
@@ -102,6 +137,16 @@
         "length": 3.43,
         "genre": "Pop", 
         "image": "images/dancing.jpg"
+    },
+
+
+    {
+      "name": "Radio",
+      "artist": "Lana del Rey",
+      "year": 2012,
+      "length": 3.34,
+      "genre": "Pop", 
+      "image": "images/allFallsDown.png"
     },
     {
         "name": "Stargirl Interlude",
@@ -141,7 +186,7 @@
         "artist": "Lorde",
         "year": 2004,
         "length": 3.43,
-        "genre": "Alt", 
+        "genre": "Alt/Indie", 
         "image": "images/lorde.webp"
     },
     {
@@ -152,6 +197,16 @@
         "genre": "Rap", 
         "image": "images/veranoSinTi.png"
     },
+
+
+    {
+      "name": "Lockdown",
+      "artist": "Koffee",
+      "year": 2022,
+      "length": 3.00,
+      "genre": "Reagge", 
+      "image": "images/allFallsDown.png"
+    },
     {
         "name": "Lifestyle",
         "artist": "Young Thug",
@@ -160,12 +215,49 @@
         "genre": "Rap", 
         "image": "images/lifestyle.png"
     },
+
+
+    {
+      "name": "Heard Em Say",
+      "artist": "Kanye West",
+      "year": 2005,
+      "length": 3.24,
+      "genre": "Rap", 
+      "image": "images/allFallsDown.png"
+    },
+
     {
         "name": "The Look",
         "artist": "Metromony",
         "year": 2004,
         "length": 3.43,
-        "genre": "Alt", 
+        "genre": "Alt/Indie", 
         "image": "images/look.jpeg"
-    }
+    },
+    {
+      "name": "So it Goes",
+      "artist": "Taylor Swift",
+      "year": 2017,
+      "length": 3.43,
+      "genre": "Pop", 
+      "image": "images/dancing.jpg"
+  },
+  {
+    "name": "Getaway Car",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "length": 3.43,
+    "genre": "Pop", 
+    "image": "images/dancing.jpg"
+},
+
+{
+  "name": "Paper Planes",
+  "artist": "M.I.A",
+  "year": 2007,
+  "length": 3.25,
+  "genre": "Pop", 
+  "image": "images/look.jpeg"
+}
+    
   ]

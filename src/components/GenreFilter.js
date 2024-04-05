@@ -7,6 +7,27 @@ export default function GenreFilter(props){
    
    // keeps track of selected genres
     const [selectedGenre, setSelectedGenre] = useState('')
+    const handleGenreSelection = (genre) => {
+        // Deselect all other checkboxes
+        setSelectedGenre(genre);
+        props.handleGenreSelection(genre);
+    };
+
+    return (
+        <div className="genreFilterContainer">
+            {[...new Set(props.songData.map(item => item.genre))].map((item, index) => (
+                <label key={index}>
+                    <input
+                        type="checkbox"
+                        checked={selectedGenre === item}
+                        onChange={() => handleGenreSelection(item)}
+                    /> {item}
+                </label>
+            ))}
+        </div>
+    );
+      }
+
 
     // // if a selected genre is already in the selected genre list, uncheck the box and update 
     // // selectedGenre by taking it out of the list then handleGenreSelection a prop passed into app is empty becasue we have deselected it 
@@ -35,23 +56,4 @@ export default function GenreFilter(props){
     //     }
 
 
-    const handleGenreSelection = (genre) => {
-        // Deselect all other checkboxes
-        setSelectedGenre(genre);
-        props.handleGenreSelection(genre);
-    };
-
-    return (
-        <div className="genreFilterContainer">
-            {[...new Set(props.songData.map(item => item.genre))].map((item, index) => (
-                <label key={index}>
-                    <input
-                        type="checkbox"
-                        checked={selectedGenre === item}
-                        onChange={() => handleGenreSelection(item)}
-                    /> {item}
-                </label>
-            ))}
-        </div>
-    );
-      }
+   
