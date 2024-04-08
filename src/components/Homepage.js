@@ -6,7 +6,7 @@ import ArtistFilter from "./ArtistFilter";
 import Functions from "../functionality/Functions";
 
 
-//This page renders all the components on the site" 
+//This page renders all the components on the site
 export default function Homepage(){
   const [favList, setFavList] = useState([]);
   const [filteredArtist, setFilteredArtist] = useState("");
@@ -21,6 +21,7 @@ export default function Homepage(){
         <h1>Angie's Mix</h1>
       </div>
       <div className="buttons">
+        {/* On button click, sort filtered songs alphabetically and also button for reset functionality*/}
           <button onClick={() =>  Functions.sortSongs( filteredSongs, setFilteredSongs, setSortClicked)}>Sort Songs Alphabetically</button>
           <button onClick={() =>Functions.reset(songData, setFilteredArtist, setFilteredGenre,setSortClicked,setFilteredSongs)}>Reset Filters</button>
           </div>
