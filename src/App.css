@@ -1,133 +1,72 @@
-/* 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.appTitle{
-  width: 70px;
-  font-size: xx-large;
-  display: flex;
-  align-items: center;
-} 
-
-.songListContainer{
-  display: flex;
-  justify-content: space-around;
-  max-width: auto;
-  margin: 0 auto;
-}
-
-.App-header {
-  background-color: black;
-  min-height: 100vh;
-  color: white;
-}
-
-
-.itemInfo{
-  margin-top: 5%;
-}
-
-
-
-.formatImage{
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-
-}
-.songList, .favSongList{
-  width: 50%
-}
-
-.favSongList{
-  display: flex;
-  flex-direction: column;
-}
-
-.songAndartist{
-
-
-}
-
-.genreFilterContainer{
-  display: flex;
-  flex-direction: row;
-
-} */
-
-
- /* .artistFilterContainer{
-  position: fixed;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-}  */
-
-
-
-/* .appTitle {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.songListContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 20px;
-}
-
-.Checkboxes {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.filtersContainer {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.artistFilterContainer,
-.genreFilterContainer {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.ContainerSongs {
-  flex-grow: 1;
-  margin-left: 20px;
-}
-
-.favSongList {
-  margin-right: 20px;
-}
-
-.imageInfo{
-  margin-top: 20px;
-} 
-*/
-
 
 
 .App {
-  display: flex;
-  flex-direction: r;
-  justify-content: space-between;
-  align-items: flex-start;
+
+  /* background-color: rgb(29, 27, 27); */
+  background-image: url('/public/images/blue.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  gap: 20px;
+  padding: 3%;
+}
+
+.appTitle{
+  color: white;
+}
+.favSongList{
+  color: white
+}
+.filtersContainer{
+  color: white;
+  grid-column: 1;
+
+  /* display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30px;
+  width: 600px;
+  height: 350px; */
+}
+
+/* .songList{
+  grid-column: 2;
+  width: 400px;
+  height: auto;
+} */
+
+.SongList{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, .5fr));
+  color: white;
+  width: 800px;
+  height: auto;
+  padding-top: 0%;
+}
+
+  /* padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1.3fr));
+  gap: 0rem; */
+
+
+.favSongList ul {
+  list-style-type: none;
+  grid-column: 3;
+}
+
+
+
+.appTitle{
+  text-align: center;
+  font-size: 30;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .songImage{
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
@@ -143,49 +82,97 @@
 }
 
 .title{
-  font-size: 28px;
+  font-size: 20px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
-  .itemInfo{
-    margin-top: 10px;
-  }
 
   .artist{
-    font-size: 25px;
-    margin-bottom: 12px;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 
   .genre, .year, .length{
     font-size: 12px;
   }
 
-  .extraAttributes{
+  .attributesContainer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-
-  .checkboxBar{
-    display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    margin-left: 30px;
-    width: 300px;
-    height: 350px;
-
-  }
-
-  .songListContainer{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .favSongs{
-    width: 200px;
-    height: auto;
-    margin-right: 40px;
+    justify-content: space-between;
+    margin-bottom: 7px;
   }
 
   
+
+  .songsAndFavListContainer{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-right: 1%;
+    justify-content: space-around;
+  }
+
+
+  .filtersContainer{
+    padding-top: 4%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filtersAndSongsContainer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .songLib{
+    color: white
+  }
+  .songLibAndTitle{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+ 
+
+
+/*  
+  .checkboxBar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    width: 600px;
+    height: 350px;
+
+  } */
+
+
+
+  /* .songListContainer{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1.3fr));
+    gap: 0rem;
+  }
+
+  .favSongList{
+    width: 300px;
+    padding: 2%;
+    height: auto;
+  
+  }
+
+  .artistFilterContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formatSongsAndFavs{
+    display: flex;
+    flex-direction: row;
+
+  } */

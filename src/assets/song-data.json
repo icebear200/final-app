@@ -26,7 +26,7 @@
       "year": 2011,
       "length": 4.54,
       "genre": "Rap", 
-      "image": "images/allFallsDown.png"
+      "image": "images/goblin.jpg "
     },
 
 
@@ -36,7 +36,7 @@
       "year": 2012,
       "length": 3.24,
       "genre": "Rap", 
-      "image": "images/allFallsDown.png"
+      "image": "images/channel.jpeg"
     },
 
   
@@ -56,14 +56,7 @@
       "genre": "Alt/Indie", 
       "image": "images/socialCues.jpeg"
     },
-    {
-      "name": "Social Cues",
-      "artist": "Cage The Elephant",
-      "year": 2019,
-      "length": 4,
-      "genre": "Alt/Indie", 
-      "image": "images/socialCues.jpeg"
-    },
+   
     {
       "name": "Mother Nature's Bitch",
       "artist": "Okay Kaya",
@@ -87,7 +80,15 @@
       "year": 200,
       "length": 3.42,
       "genre": "Rap", 
-      "image": "images/allFallsDown.png"
+      "image": "images/touchSky.jpeg"
+    },
+    {
+      "name": "Social Cues",
+      "artist": "Cage The Elephant",
+      "year": 2019,
+      "length": 4,
+      "genre": "Alt/Indie", 
+      "image": "images/socialCues.jpeg"
     },
 
     {
@@ -146,7 +147,7 @@
       "year": 2012,
       "length": 3.34,
       "genre": "Pop", 
-      "image": "images/allFallsDown.png"
+      "image": "images/lana.jpeg"
     },
     {
         "name": "Stargirl Interlude",
@@ -162,7 +163,7 @@
         "year": 2004,
         "length": 3.43,
         "genre": "Pop", 
-        "image": "images/allFallsDown.png"
+        "image": "images/planetHer.jpg"
     },
     {
         "name": "Toast",
@@ -205,7 +206,7 @@
       "year": 2022,
       "length": 3.00,
       "genre": "Reagge", 
-      "image": "images/allFallsDown.png"
+      "image": "images/look.jpeg"
     },
     {
         "name": "Lifestyle",
@@ -223,7 +224,7 @@
       "year": 2005,
       "length": 3.24,
       "genre": "Rap", 
-      "image": "images/allFallsDown.png"
+      "image": "images/touchSky.jpeg"
     },
 
     {
@@ -257,7 +258,7 @@
   "year": 2007,
   "length": 3.25,
   "genre": "Pop", 
-  "image": "images/look.jpeg"
+  "image": "images/paperPlanes.jpeg"
 }
     
   ]

@@ -1,57 +1,53 @@
-import { useState } from "react"
-import songData from "../assets/song-data.json"
 
+import { useState, useEffect } from "react";
 
-// component that renders the genre filters
+// component that renders the artist filters
 export default function ArtistFilter(props){
-   
-   // keeps track of selected genres
-    const [selectedArtist, setSelectedArtist] = useState('');
 
-    const handleArtistSelection = (artist) => {
-        setSelectedArtist(artist);
-        props.handleArtistSelection(artist);
-    };
+  const [selectedArtist, setSelectedArtist] = useState("");
+  const [checkboxesState, setCheckboxesState] = useState({});
 
-    return (
-        <div className="genreFilterContainer">
-            {[...new Set(props.songData.map(item => item.artist))].map((item, index) => (
-                <label key={index}>
-                    <input
-                        type="checkbox"
-                        checked={selectedArtist === item}
-                        onChange={() => handleArtistSelection(item)}
-                    /> {item}
-                </label>
-            ))}
-        </div>
-    );
+  //re renders to show the selectedartist
+  useEffect(() => {
+    const newState = {};
+    props.songData.forEach((item) => {
+      newState[item.artist] = selectedArtist === item.artist;
+    });
+    setCheckboxesState(newState);
+  }, [selectedArtist, props.songData]);
+
+  // when an artist checkbox is selected it updates the artist selection to be currently selected artist
+  const handleArtistSelection = (artist) => {
+    setSelectedArtist(artist);
+    props.handleArtistSelection(artist);
+  };
+
+
+  //function to track checkbox change to allow for only one selection at a time
+  const handleCheckboxChange = (artist) => {
+    const newState = { ...checkboxesState };
+    newState[artist] = !newState[artist];
+    setCheckboxesState(newState);
+    handleArtistSelection(newState[artist] ? artist : "");
+  };
+
+
+  return (
+    <div className="artistFilterContainer">
+      {/* loops through the songData and displays the artists. The new Set array makes sure only unique
+       values are displayed (no duplicates) newSet: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set*/}
+      {[...new Set(props.songData.map((item) => item.artist))].map(
+        (item, index) => (
+          <label key={index}>
+            <input
+              type="checkbox"
+              checked={checkboxesState[item]}
+              onChange={() => handleCheckboxChange(item)}
+            />{" "}
+            {item}
+          </label>
+        )
+      )}
+    </div>
+  );
 }
-    
-
-    // if a selected genre is already in the selected genre list, uncheck the box and update 
-    // selectedGenre by taking it out of the list then handleGenreSelection a prop passed into app is empty becasue we have deselected it 
-//     const handleArtistSlection = (artist) => {
-//         if (selectedArtist.includes(artist)){
-//         setSelectedArtist(selectedArtist.filter(item => item !== artist))
-//         props.handleArtistSlection('')
-//       }
-//       // if the selected genre is not already in the selectedGenre list, add it to the list and handleSelected genre with prop in app
-//       else{
-//         setSelectedArtist([...selectedArtist, artist])
-//         props.handleArtistSlection(artist);
-//       }
-//     }
-    
-    
-//     return (
-//         <div class ="genreFilterContainer"> 
-//         {[... new Set(songData.map(item => item.artist))].map((item, index) => (
-//             <label key={index}> <input type ="checkbox" checked={selectedArtist.includes(item)} onChange={() => handleArtistSlection(item)}
-//             /> {item} </label>
-//           )
-//           )} 
-//         </div>
-//     )
-
-// }

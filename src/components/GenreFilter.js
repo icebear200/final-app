@@ -1,59 +1,33 @@
-import { useState } from "react"
-import songData from "../assets/song-data.json"
+import { useState} from "react";
 
-
-// component that renders the genre filters
+//component that renders the genre filter
 export default function GenreFilter(props){
-   
-   // keeps track of selected genres
-    const [selectedGenre, setSelectedGenre] = useState('')
-    const handleGenreSelection = (genre) => {
-        // Deselect all other checkboxes
-        setSelectedGenre(genre);
-        props.handleGenreSelection(genre);
-    };
+  // useState that keeps track of the selected genre
+  const [selectedGenre, setSelectedGenre] = useState("");
 
-    return (
-        <div className="genreFilterContainer">
-            {[...new Set(props.songData.map(item => item.genre))].map((item, index) => (
-                <label key={index}>
-                    <input
-                        type="checkbox"
-                        checked={selectedGenre === item}
-                        onChange={() => handleGenreSelection(item)}
-                    /> {item}
-                </label>
-            ))}
-        </div>
-    );
-      }
+  //handles the genre selection by setting the genre to the selected genre
+  const handleGenreSelection = (genre) => {
+    setSelectedGenre(genre);
+    props.handleGenreSelection(genre);
+  };
 
+ //renders the genre filter checkboxes
+  return (
+    <div className="genreFilterContainer">
+      {/* loops through the songData and displays unique values of the genres and creates checkboxes that check the selected genre */}
+      {[...new Set(props.songData.map((item) => item.genre))].map(
+        (item, index) => (
+          <label key={index}>
+            <input
+              type="checkbox"
+              checked={selectedGenre === item}
+              onChange={() => handleGenreSelection(item)}
+            />{" "}
+            {item}
+          </label>
+        )
+      )}
+    </div>
+  );
 
-    // // if a selected genre is already in the selected genre list, uncheck the box and update 
-    // // selectedGenre by taking it out of the list then handleGenreSelection a prop passed into app is empty becasue we have deselected it 
-    // const handleGenreSelection = (genre) => {
-    //     if (selectedGenre.includes(genre)){
-    //     setSelectedGenre(selectedGenre.filter(item => item !== genre))
-    //     props.handleGenreSelection('')
-    //   }
-    //   // if the selected genre is not already in the selectedGenre list, add it to the list and handleSelected genre with prop in app
-    //   else{
-    //     setSelectedGenre([...selectedGenre, genre])
-    //     props.handleGenreSelection(genre);
-    //   }
-    // }
-    
-    
-    // return (
-    //     <div class ="genreFilterContainer"> 
-    //     {[... new Set(songData.map(item => item.genre))].map((item, index) => (
-    //         <label key={index}> <input type ="checkbox" checked={selectedGenre.includes(item)} onChange={() => handleGenreSelection(item)}
-    //         /> {item} </label>
-    //       )
-    //       )} 
-    //     </div>
-    // )
-    //     }
-
-
-   
+}
