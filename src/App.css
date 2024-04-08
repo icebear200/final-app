@@ -1,9 +1,7 @@
 
 
 .App {
-
-  /* background-color: rgb(29, 27, 27); */
-  background-image: url('/public/images/blue.jpeg');
+  background-image: url('/public/images/pinkCenter.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
@@ -12,43 +10,26 @@
 }
 
 .appTitle{
-  color: white;
+  color: black;
 }
 .favSongList{
-  color: white
+  color: black;
 }
 .filtersContainer{
-  color: white;
+  color:  black;
   grid-column: 1;
 
-  /* display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 30px;
-  width: 600px;
-  height: 350px; */
 }
-
-/* .songList{
-  grid-column: 2;
-  width: 400px;
-  height: auto;
-} */
 
 .SongList{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, .5fr));
-  color: white;
+  color:  black;
   width: 800px;
   height: auto;
   padding-top: 0%;
 }
 
-  /* padding: 10%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1.3fr));
-  gap: 0rem; */
 
 
 .favSongList ul {
@@ -127,7 +108,7 @@
   }
 
   .songLib{
-    color: white
+    color: black;
   }
   .songLibAndTitle{
     display: flex;
@@ -137,42 +118,3 @@
 
  
 
-
-/*  
-  .checkboxBar{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 30px;
-    width: 600px;
-    height: 350px;
-
-  } */
-
-
-
-  /* .songListContainer{
-    padding: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1.3fr));
-    gap: 0rem;
-  }
-
-  .favSongList{
-    width: 300px;
-    padding: 2%;
-    height: auto;
-  
-  }
-
-  .artistFilterContainer{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .formatSongsAndFavs{
-    display: flex;
-    flex-direction: row;
-
-  } */

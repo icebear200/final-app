@@ -23,7 +23,8 @@ export default function ArtistFilter(props){
   };
 
 
-  //function to track checkbox change to allow for only one selection at a time
+  //function to track checkbox change to allow for only one selection at a time. creates a copy of the checkbox state
+  // and updates the state with the checkbox selected and checks if there is an artist selected in the new state, if so it sets the artist, if not its an empty string
   const handleCheckboxChange = (artist) => {
     const newState = { ...checkboxesState };
     newState[artist] = !newState[artist];
