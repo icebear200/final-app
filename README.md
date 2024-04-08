@@ -1,4 +1,4 @@
-Deployed site: https://final-9wytyney0-angela-oseis-projects.vercel.app/
+Deployed site: https://final-app-playlist.vercel.app/
 
 Run locally: in terminal npm start and go to localhost:3000
 
